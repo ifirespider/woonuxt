@@ -1,12 +1,17 @@
 <script setup lang="ts">
 const { wooNuxtVersionInfo } = useHelpers();
+const { wishlistLink } = useAuth();
 </script>
 
 <template>
   <footer class="bg-white order-last">
     <div class="container flex flex-wrap justify-between gap-12 my-24 md:gap-24">
       <div class="mr-auto">
-        <Logo />
+        <template>
+  <NuxtLink to="/" class="inline-flex items-center gap-2">
+    <img src="/images/logo-black.svg" alt="Logo" class="object-contain h-10" />
+  </NuxtLink>
+</template>
         <WebsiteShortDescription />
         <div class="inline-flex gap-2 justify-start mt-8">
           <LangSwitcher />
@@ -15,12 +20,10 @@ const { wooNuxtVersionInfo } = useHelpers();
       <div class="w-[42.857%] lg:w-auto">
         <div class="mb-1 font-semibold text-gray-900">{{ $t('general.information') }}</div>
         <div class="text-sm text-gray-700">
-          <a class="py-1.5 block" href="https://github.com/scottyzen/woonuxt?tab=readme-ov-file#next-generation-front-end-for-woocommerce" target="_blank">{{
+          <a class="py-1.5 block" href="/about" target="_blank">{{
             $t('general.about')
           }}</a>
-          <a href="/" class="py-1.5 block">{{ $t('general.careers') }}</a>
-          <a href="/" class="py-1.5 block">{{ $t('general.press') }}</a>
-          <a href="https://woonuxt.com/faq" class="py-1.5 block" rel="noreferrer" target="_blank">FAQ's</a>
+          <a href="/faq" class="py-1.5 block" rel="noreferrer" target="_blank">FAQ's</a>
         </div>
       </div>
       <div class="w-[42.857%] lg:w-auto">
@@ -36,9 +39,9 @@ const { wooNuxtVersionInfo } = useHelpers();
         <div class="mb-1 font-semibold text-gray-900">{{ $t('general.customerService') }}</div>
         <div class="text-sm text-gray-700">
           <NuxtLink to="/contact" class="py-1.5 block">{{ $t('general.contactUs') }}</NuxtLink>
-          <a href="/" class="py-1.5 block">{{ $t('general.shippingReturns') }}</a>
-          <a href="/" class="py-1.5 block">{{ $t('general.privacyPolicy') }}</a>
-          <a href="/" class="py-1.5 block">{{ $t('general.termsConditions') }}</a>
+          <a href="/shipping-returns" class="py-1.5 block">{{ $t('general.shippingReturns') }}</a>
+          <a href="/privacy-policy" class="py-1.5 block">{{ $t('general.privacyPolicy') }}</a>
+          <a href="/terms-conditions" class="py-1.5 block">{{ $t('general.termsConditions') }}</a>
         </div>
       </div>
       <div class="w-[42.857%] lg:w-auto">
@@ -46,7 +49,7 @@ const { wooNuxtVersionInfo } = useHelpers();
         <div class="text-sm text-gray-700">
           <NuxtLink to="/my-account/" class="py-1.5 block">{{ $t('account.myAccount') }}</NuxtLink>
           <NuxtLink to="/my-account/?tab=orders" class="py-1.5 block">{{ $t('shop.orderHistory') }}</NuxtLink>
-          <NuxtLink to="/wishlist" class="py-1.5 block">{{ $t('shop.wishlist') }}</NuxtLink>
+          <NuxtLink :to="wishlistLink" class="py-1.5 block">{{ $t('shop.wishlist') }}</NuxtLink>
           <a href="/" class="py-1.5 block">{{ $t('general.newsletter') }}</a>
         </div>
       </div>
@@ -54,15 +57,11 @@ const { wooNuxtVersionInfo } = useHelpers();
     <div class="container border-t border-gray-200 flex items-center justify-center mb-4">
       <div class="copywrite">
         <p class="py-4 text-xs text-center text-gray-600">
-          <a href="https://woonuxt.com" :title="`WooNuxt v${wooNuxtVersionInfo}`">{{ `WooNuxt v${wooNuxtVersionInfo}` }}</a> - by
-          <a href="https://scottyzen.com" title="Scott Kennedy - Web Developer" target="_blank">Scott Kennedy</a>
+         © 2026 <a href="https://www.acsweetjewelry.com/">Acsweet Jewelry</a>. All rights reserved.
         </p>
       </div>
       <SocialIcons class="ml-auto" />
     </div>
-
-    <!-- Hook: Bottom of footer -->
-    <HookOutlet name="layout.footer.bottom" as="div" class="container pb-8" />
   </footer>
 </template>
 
