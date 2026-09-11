@@ -1,7 +1,5 @@
 <script setup lang="ts">
-const { cart, isCartMutating, refreshCartIfNeeded } = useCart();
-
-onMounted(refreshCartIfNeeded);
+const { cart, isCartMutating } = useCart();
 
 definePageMeta({
   title: 'Cart',

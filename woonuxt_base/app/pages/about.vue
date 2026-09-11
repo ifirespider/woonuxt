@@ -1,32 +1,27 @@
 <template>
   <div class="container my-8">
-    <h1 class="mb-8 text-3xl font-semibold text-primary">Welcome to Acsweet jewelry!</h1>
+    <h1 class="mb-8 text-3xl font-semibold text-primary">About Acsweet jewelry!</h1>
     <div class="my-8 prose">
       <p>
-        <h2>Welcome to Our Brand Story</h2>
-At Acsweet, we are a passionate and dedicated startup on a mission to bring you high-quality, stylish, and durable jewelry that speaks to your unique individuality. We take what we do seriously—from sourcing the finest materials to ensuring every piece feels like it was made just for you.
+        <h2>About Us</h2>
+At ACSweet, we believe that fine jewelry should never be out of reach — not because of your budget, and not because of your style.
 ﻿
-We believe that jewelry isn’t just an accessory; it’s an expression of who you are. That’s why we pour our hearts into curation, craftsmanship, and customer care, hoping to earn a special place in your collection.
+We're here to change that.
 ﻿
-<h3>Our Materials: Built to Last</h3>
-We carefully select premium, skin-friendly materials designed for everyday wear, longevity, and shine:
+Every piece we create is designed for real life, not just special occasions. Whether you love minimalist gold, sparkling gemstones, or something in between, you'll find something that feels like you. And at a price that feels good.
 ﻿
-925 Sterling Silver: Classic, timeless, and elegant.
+From earrings and ear studs to necklaces, rings, bracelets, anklets, and toe rings — we've got you covered. For those who express themselves beyond the traditional, we also offer body jewelry: nose rings, nose studs, eyebrow rings, eyebrow studs, labret rings, and more. Whatever you choose to adorn, we have a piece that fits your style.
 ﻿
-Titanium Steel: Ultra-durable, hypoallergenic, and perfect for sensitive skin.
+Because confidence doesn't cost a fortune. And neither should your jewelry.
 ﻿
-Stainless Steel: Sleek, tarnish-resistant, and modern.
+ACSweet — Your choice. Your style. Your everyday confidence.
 ﻿
-High-Quality Copper: Beautifully crafted for intricate and trendy designs.
-﻿ 
-<h3>Our Collection</h3>
-Whether you are looking for timeless everyday staples or bold statement pieces, our extensive collection has something for everyone:
-﻿
-Classic Jewelry: Earrings, Necklaces, Rings, Bracelets, and Anklets.
-﻿
-Body Jewelry: Nose Rings, Belly Button Rings, Nipple Rings, Tongue Rings, Lip Rings, Eyebrow Rings, Ear Gauges/Plugs, and Dermal Anchors.
 ﻿
 <h2>🎁 Share the Love, Get a $5 Reward!</h2>
+
+Instead of pouring money into advertising, we pour it into you. Because nothing beats a real deal — and you deserve it. That's why we created our $5 Super Plan: honest pieces at an unbeatable price, because great style shouldn't come with a markup.
+
+
 As a growing startup, your support means the world to us. If you love our products, we would be incredibly grateful if you shared them with your friends and family on social media!
 ﻿
 To show our appreciation, we’d love to gift you a $5 coupon code valid for any product storewide.
