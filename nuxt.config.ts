@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   gtag: {
     id: 'G-NL9HZRKCS4' // ⬅️ 这里换成你在 Google Analytics 后台申请到的真实 ID
   },
-
   components: [{ path: './components', pathPrefix: false }],
 
   /**
